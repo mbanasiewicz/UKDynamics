@@ -45,7 +45,12 @@
     // 5. Utworzenie nowego wektora grawitacji i jego podmiana
 //    CGVector newGravityVector = CGVectorMake(0.0f, 1.0f);
 //    [self.gravity setGravityDirection:newGravityVector];
-    
+
+    // 6. Blok wykonywany przez każde zachowanie przy każdym kroku animacji
+//    __weak UKGravityViewController *wself = self;
+//    self.gravity.action = ^{
+//        NSLog(@"%@", NSStringFromCGRect(wself.rect.frame));
+//    };
 }
 
 - (void)didReceiveMemoryWarning
