@@ -14,15 +14,21 @@
 		3442B26D181B15F10028EFF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B26C181B15F10028EFF2 /* main.m */; };
 		3442B271181B15F10028EFF2 /* UKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B270181B15F10028EFF2 /* UKAppDelegate.m */; };
 		3442B274181B15F10028EFF2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3442B272181B15F10028EFF2 /* Main_iPhone.storyboard */; };
-		3442B277181B15F10028EFF2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3442B275181B15F10028EFF2 /* Main_iPad.storyboard */; };
 		3442B27A181B15F10028EFF2 /* UKMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B279181B15F10028EFF2 /* UKMasterViewController.m */; };
-		3442B27D181B15F10028EFF2 /* UKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B27C181B15F10028EFF2 /* UKDetailViewController.m */; };
 		3442B27F181B15F10028EFF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3442B27E181B15F10028EFF2 /* Images.xcassets */; };
 		3442B286181B15F20028EFF2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442B285181B15F20028EFF2 /* XCTest.framework */; };
 		3442B287181B15F20028EFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442B260181B15F10028EFF2 /* Foundation.framework */; };
 		3442B288181B15F20028EFF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442B264181B15F10028EFF2 /* UIKit.framework */; };
 		3442B290181B15F20028EFF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3442B28E181B15F20028EFF2 /* InfoPlist.strings */; };
 		3442B292181B15F20028EFF2 /* KitDynamicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B291181B15F20028EFF2 /* KitDynamicsTests.m */; };
+		3442B29D181B1A220028EFF2 /* UKDynamicsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B29C181B1A220028EFF2 /* UKDynamicsBaseViewController.m */; };
+		3442B2A2181B1AC50028EFF2 /* UKGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2A1181B1AC50028EFF2 /* UKGravityViewController.m */; };
+		3442B2AB181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2AA181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.m */; };
+		3442B2AF181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2AE181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.m */; };
+		3442B2B3181B1C4F0028EFF2 /* UKAttachmentToPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2B2181B1C4F0028EFF2 /* UKAttachmentToPointViewController.m */; };
+		3442B2BB181B1D100028EFF2 /* UKSnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2BA181B1D100028EFF2 /* UKSnapViewController.m */; };
+		3442B2BE181B1D490028EFF2 /* UKPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2BD181B1D490028EFF2 /* UKPushViewController.m */; };
+		3442B2C2181B39740028EFF2 /* UKCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442B2C1181B39740028EFF2 /* UKCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,17 +53,30 @@
 		3442B26F181B15F10028EFF2 /* UKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKAppDelegate.h; sourceTree = "<group>"; };
 		3442B270181B15F10028EFF2 /* UKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKAppDelegate.m; sourceTree = "<group>"; };
 		3442B273181B15F10028EFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		3442B276181B15F10028EFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		3442B278181B15F10028EFF2 /* UKMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKMasterViewController.h; sourceTree = "<group>"; };
 		3442B279181B15F10028EFF2 /* UKMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKMasterViewController.m; sourceTree = "<group>"; };
-		3442B27B181B15F10028EFF2 /* UKDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKDetailViewController.h; sourceTree = "<group>"; };
-		3442B27C181B15F10028EFF2 /* UKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKDetailViewController.m; sourceTree = "<group>"; };
 		3442B27E181B15F10028EFF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3442B284181B15F20028EFF2 /* KitDynamicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitDynamicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3442B285181B15F20028EFF2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3442B28D181B15F20028EFF2 /* KitDynamicsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitDynamicsTests-Info.plist"; sourceTree = "<group>"; };
 		3442B28F181B15F20028EFF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3442B291181B15F20028EFF2 /* KitDynamicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitDynamicsTests.m; sourceTree = "<group>"; };
+		3442B29B181B1A220028EFF2 /* UKDynamicsBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKDynamicsBaseViewController.h; sourceTree = "<group>"; };
+		3442B29C181B1A220028EFF2 /* UKDynamicsBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKDynamicsBaseViewController.m; sourceTree = "<group>"; };
+		3442B2A0181B1AC50028EFF2 /* UKGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKGravityViewController.h; sourceTree = "<group>"; };
+		3442B2A1181B1AC50028EFF2 /* UKGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKGravityViewController.m; sourceTree = "<group>"; };
+		3442B2A9181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKGravityWithCollisionViewController.h; sourceTree = "<group>"; };
+		3442B2AA181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKGravityWithCollisionViewController.m; sourceTree = "<group>"; };
+		3442B2AD181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKGravityWithCollisionAndPropertiesViewController.h; sourceTree = "<group>"; };
+		3442B2AE181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKGravityWithCollisionAndPropertiesViewController.m; sourceTree = "<group>"; };
+		3442B2B1181B1C4F0028EFF2 /* UKAttachmentToPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKAttachmentToPointViewController.h; sourceTree = "<group>"; };
+		3442B2B2181B1C4F0028EFF2 /* UKAttachmentToPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKAttachmentToPointViewController.m; sourceTree = "<group>"; };
+		3442B2B9181B1D100028EFF2 /* UKSnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKSnapViewController.h; sourceTree = "<group>"; };
+		3442B2BA181B1D100028EFF2 /* UKSnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKSnapViewController.m; sourceTree = "<group>"; };
+		3442B2BC181B1D490028EFF2 /* UKPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKPushViewController.h; sourceTree = "<group>"; };
+		3442B2BD181B1D490028EFF2 /* UKPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKPushViewController.m; sourceTree = "<group>"; };
+		3442B2C0181B39740028EFF2 /* UKCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKCircleView.h; sourceTree = "<group>"; };
+		3442B2C1181B39740028EFF2 /* UKCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +136,11 @@
 		3442B266181B15F10028EFF2 /* KitDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				3442B29F181B1A5D0028EFF2 /* Other */,
+				3442B29E181B1A520028EFF2 /* Przykłady */,
 				3442B26F181B15F10028EFF2 /* UKAppDelegate.h */,
 				3442B270181B15F10028EFF2 /* UKAppDelegate.m */,
 				3442B272181B15F10028EFF2 /* Main_iPhone.storyboard */,
-				3442B275181B15F10028EFF2 /* Main_iPad.storyboard */,
-				3442B278181B15F10028EFF2 /* UKMasterViewController.h */,
-				3442B279181B15F10028EFF2 /* UKMasterViewController.m */,
-				3442B27B181B15F10028EFF2 /* UKDetailViewController.h */,
-				3442B27C181B15F10028EFF2 /* UKDetailViewController.m */,
 				3442B27E181B15F10028EFF2 /* Images.xcassets */,
 				3442B267181B15F10028EFF2 /* Supporting Files */,
 			);
@@ -158,6 +174,86 @@
 				3442B28E181B15F20028EFF2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3442B29E181B1A520028EFF2 /* Przykłady */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2BF181B1D4F0028EFF2 /* Popychanie */,
+				3442B2B8181B1CEF0028EFF2 /* Przyciąganie do punktu */,
+				3442B2B0181B1C1E0028EFF2 /* Łączenie widoków z punktem */,
+				3442B2AC181B1B6F0028EFF2 /* Grawitacja + Kolizje + Dynamiczne własności */,
+				3442B2A4181B1AEB0028EFF2 /* Grawitacja + Kolizje */,
+				3442B2A3181B1AD50028EFF2 /* Grawitacja */,
+			);
+			name = "Przykłady";
+			sourceTree = "<group>";
+		};
+		3442B29F181B1A5D0028EFF2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3442B29B181B1A220028EFF2 /* UKDynamicsBaseViewController.h */,
+				3442B29C181B1A220028EFF2 /* UKDynamicsBaseViewController.m */,
+				3442B278181B15F10028EFF2 /* UKMasterViewController.h */,
+				3442B279181B15F10028EFF2 /* UKMasterViewController.m */,
+				3442B2C0181B39740028EFF2 /* UKCircleView.h */,
+				3442B2C1181B39740028EFF2 /* UKCircleView.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		3442B2A3181B1AD50028EFF2 /* Grawitacja */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2A0181B1AC50028EFF2 /* UKGravityViewController.h */,
+				3442B2A1181B1AC50028EFF2 /* UKGravityViewController.m */,
+			);
+			name = Grawitacja;
+			sourceTree = "<group>";
+		};
+		3442B2A4181B1AEB0028EFF2 /* Grawitacja + Kolizje */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2A9181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.h */,
+				3442B2AA181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.m */,
+			);
+			name = "Grawitacja + Kolizje";
+			sourceTree = "<group>";
+		};
+		3442B2AC181B1B6F0028EFF2 /* Grawitacja + Kolizje + Dynamiczne własności */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2AD181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.h */,
+				3442B2AE181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.m */,
+			);
+			name = "Grawitacja + Kolizje + Dynamiczne własności";
+			sourceTree = "<group>";
+		};
+		3442B2B0181B1C1E0028EFF2 /* Łączenie widoków z punktem */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2B1181B1C4F0028EFF2 /* UKAttachmentToPointViewController.h */,
+				3442B2B2181B1C4F0028EFF2 /* UKAttachmentToPointViewController.m */,
+			);
+			name = "Łączenie widoków z punktem";
+			sourceTree = "<group>";
+		};
+		3442B2B8181B1CEF0028EFF2 /* Przyciąganie do punktu */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2B9181B1D100028EFF2 /* UKSnapViewController.h */,
+				3442B2BA181B1D100028EFF2 /* UKSnapViewController.m */,
+			);
+			name = "Przyciąganie do punktu";
+			sourceTree = "<group>";
+		};
+		3442B2BF181B1D4F0028EFF2 /* Popychanie */ = {
+			isa = PBXGroup;
+			children = (
+				3442B2BC181B1D490028EFF2 /* UKPushViewController.h */,
+				3442B2BD181B1D490028EFF2 /* UKPushViewController.m */,
+			);
+			name = Popychanie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3442B277181B15F10028EFF2 /* Main_iPad.storyboard in Resources */,
 				3442B27F181B15F10028EFF2 /* Images.xcassets in Resources */,
 				3442B274181B15F10028EFF2 /* Main_iPhone.storyboard in Resources */,
 				3442B26B181B15F10028EFF2 /* InfoPlist.strings in Resources */,
@@ -259,10 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3442B2BE181B1D490028EFF2 /* UKPushViewController.m in Sources */,
 				3442B271181B15F10028EFF2 /* UKAppDelegate.m in Sources */,
-				3442B27D181B15F10028EFF2 /* UKDetailViewController.m in Sources */,
+				3442B2C2181B39740028EFF2 /* UKCircleView.m in Sources */,
+				3442B29D181B1A220028EFF2 /* UKDynamicsBaseViewController.m in Sources */,
+				3442B2AF181B1B950028EFF2 /* UKGravityWithCollisionAndPropertiesViewController.m in Sources */,
+				3442B2A2181B1AC50028EFF2 /* UKGravityViewController.m in Sources */,
 				3442B27A181B15F10028EFF2 /* UKMasterViewController.m in Sources */,
 				3442B26D181B15F10028EFF2 /* main.m in Sources */,
+				3442B2AB181B1B4E0028EFF2 /* UKGravityWithCollisionViewController.m in Sources */,
+				3442B2BB181B1D100028EFF2 /* UKSnapViewController.m in Sources */,
+				3442B2B3181B1C4F0028EFF2 /* UKAttachmentToPointViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +401,6 @@
 				3442B273181B15F10028EFF2 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		3442B275181B15F10028EFF2 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3442B276181B15F10028EFF2 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		3442B28E181B15F20028EFF2 /* InfoPlist.strings */ = {
@@ -399,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitDynamics/KitDynamics-Prefix.pch";
 				INFOPLIST_FILE = "KitDynamics/KitDynamics-Info.plist";
@@ -412,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitDynamics/KitDynamics-Prefix.pch";
 				INFOPLIST_FILE = "KitDynamics/KitDynamics-Info.plist";

@@ -14,18 +14,29 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    CGRect bounds = self.bounds;
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(ctx);
+    
+    CGPathRef circle = CGPathCreateWithEllipseInRect(bounds, NULL);
+    
+    // Draw the border
+    CGContextSaveGState(ctx); {
+        CGContextBeginPath(ctx);
+        CGContextAddPath(ctx, circle);
+        [[UIColor blueColor] setFill];
+        CGContextFillPath(ctx);
+    } CGContextRestoreGState(ctx);
+    
+    CGPathRelease(circle);
+    CGContextRestoreGState(ctx);
 }
-*/
 
 @end

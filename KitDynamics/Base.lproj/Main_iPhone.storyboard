@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -17,13 +17,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="64"/>
+            <point key="canvasLocation" x="-1049" y="1120"/>
         </scene>
-        <!--class Prefix:identifier Master View Controller - Master-->
+        <!--Master View Controller - Master-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
                 <tableViewController title="Master" id="pGg-6v-bdr" customClass="UKMasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="2pz-XF-uhl" style="IBUITableViewCellStyleDefault" id="m0d-ak-lc9">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="8aJ-Tn-G4c">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -43,12 +43,8 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="jUr-3t-vfg"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -57,43 +53,133 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="UIKitDynamics" id="tQt-TN-PWz"/>
+                    <connections>
+                        <segue destination="uMF-zo-KAS" kind="push" identifier="showGravity" id="F3m-D6-59m"/>
+                        <segue destination="Oi2-9P-0Fh" kind="push" identifier="showGravityAndCollisions" id="5sc-AC-bml"/>
+                        <segue destination="tWg-cR-0sA" kind="push" identifier="showGravityWithCollisionsAndProperties" id="Bwb-uI-u3s"/>
+                        <segue destination="h14-q7-Yd4" kind="push" identifier="showAttachmentToPoint" id="S1w-Py-fhd"/>
+                        <segue destination="Fy6-Iu-8R7" kind="push" identifier="showSnap" id="krA-x0-kCy"/>
+                        <segue destination="7au-e2-Hl8" kind="push" identifier="showPush" id="j9u-ls-4wR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="64"/>
+            <point key="canvasLocation" x="219" y="1152"/>
         </scene>
-        <!--class Prefix:identifier Detail View Controller - Detail-->
-        <scene sceneID="Cn3-H9-jdl">
+        <!--Snap View Controller - Przyciąganie do punktu-->
+        <scene sceneID="dWd-gt-gYI">
             <objects>
-                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="UKDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MMQ-IT-qOo">
+                <viewController id="Fy6-Iu-8R7" customClass="UKSnapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N16-NC-Czp"/>
+                        <viewControllerLayoutGuide type="bottom" id="sbk-K2-9eg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kX-HQ-NRx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-5M-9Gs">
-                                <rect key="frame" x="20" y="276" width="280" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" symbolic="YES" id="62x-JV-TTJ"/>
-                            <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" id="JzS-HC-Rnl"/>
-                            <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" symbolic="YES" id="pXB-RP-Zz6"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
-                    <connections>
-                        <outlet property="detailDescriptionLabel" destination="Lei-5M-9Gs" id="sCT-F7-F6f"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Przyciąganie do punktu" id="rM3-ct-mvI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1og-Jq-rnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="64"/>
+            <point key="canvasLocation" x="1512" y="-473"/>
+        </scene>
+        <!--Push View Controller - Popychanie-->
+        <scene sceneID="08v-XD-Sfg">
+            <objects>
+                <viewController id="7au-e2-Hl8" customClass="UKPushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1J-Xf-gHx"/>
+                        <viewControllerLayoutGuide type="bottom" id="oF7-pT-hYa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aam-rE-won">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Popychanie" id="UND-ZX-6tn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Khi-0i-kEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="-1359"/>
+        </scene>
+        <!--Attachment To Point View Controller - Łączenie z punktem-->
+        <scene sceneID="83A-MG-ylF">
+            <objects>
+                <viewController id="h14-q7-Yd4" customClass="UKAttachmentToPointViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XFq-yd-9MC"/>
+                        <viewControllerLayoutGuide type="bottom" id="TRF-pr-gLn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9x1-Q8-8Q2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Łączenie z punktem" id="bAZ-Zn-ACn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmO-wf-A7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="1152"/>
+        </scene>
+        <!--Gravity With Collision And Properties View Controller - Grawitacja + Kolizje + Dynamiczne własności-->
+        <scene sceneID="Bpy-5m-I89">
+            <objects>
+                <viewController id="tWg-cR-0sA" customClass="UKGravityWithCollisionAndPropertiesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ap-03-cEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="GEW-sb-w4P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uBh-BA-DNo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grawitacja + Kolizje + Dynamiczne własności" id="EUT-7a-yzY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goi-oW-JMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="2147"/>
+        </scene>
+        <!--Gravity With Collision View Controller - Grawitacja + Kolizje-->
+        <scene sceneID="jyq-Il-p83">
+            <objects>
+                <viewController id="Oi2-9P-0Fh" customClass="UKGravityWithCollisionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AZp-F6-xbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="sIv-zN-RnW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kSo-5F-yBv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grawitacja + Kolizje" id="oZC-hJ-5Sk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vc-F4-iOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="2947"/>
+        </scene>
+        <!--Gravity View Controller - Grawitacja-->
+        <scene sceneID="yyf-sS-C93">
+            <objects>
+                <viewController id="uMF-zo-KAS" customClass="UKGravityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="inu-oP-fOT"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZx-LP-fKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nQt-NN-CNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grawitacja" id="77m-Sq-oC4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpS-2z-cg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="3761"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
