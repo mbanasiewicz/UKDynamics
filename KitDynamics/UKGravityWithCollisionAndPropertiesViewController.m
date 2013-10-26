@@ -52,6 +52,14 @@
     // 4. Zmodyfikowanie własności oporu jaki stawia prawy kwadrat podczas przemieszczania się
     //    Wartości pomiędzy 0.0 a 1.0, 0 oznacza brak oporów
 //    self.rightItemBehavior.resistance = 0.0f;
+    
+    // 5. Dodanie prędkość kątowej obrotu elementu
+    //    W radianach na sekundę
+//    [self.leftItemBehavior addAngularVelocity:4.0f forItem:self.leftRect];
+    
+    // 6. Dodanie prędkości przemieszczania się elementu
+    //    W punktach na sekundę
+//    [self.leftItemBehavior addLinearVelocity:self.view.center forItem:self.leftRect];
 }
 
 - (void)didReceiveMemoryWarning

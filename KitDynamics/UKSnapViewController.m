@@ -35,6 +35,7 @@
 //    [self.animator addBehavior:self.snap];
     
     // 3. Zmiana współczynnika oscylacji
+    //    Od 0.0 do 1.0 - 0 oznacza brak oscylacji
 //    [self.snap setDamping:1.0f];
 }
 

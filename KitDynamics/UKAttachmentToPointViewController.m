@@ -36,10 +36,10 @@
 //    [self.animator addBehavior:self.attachment];
     
     // 3. Ustawienie własności tłumienia
-//    self.attachment.damping = 0.4f;
+//    self.attachment.damping = 0.2f;
     
     // 4. Ustawienie częstotliwości drgań sprężyny
-//    self.attachment.frequency = 2.0f;
+//    self.attachment.frequency = 1.0f;
     
     // 5. Ustawienie długości połączenia pomiędzy obiektami
 //    self.attachment.length = 150.0f;

@@ -29,7 +29,7 @@
     
     // Przygotowanie widoku
     [self prepareView];
-    
+// ========================================================== //    
     // 1. Utworzenie zachowania kolizji z utworzonym kwadratem
 //    self.collision = [[UICollisionBehavior alloc] initWithItems:@[self.rect]];
     
@@ -45,9 +45,13 @@
     
     // 5. Dodawanie barier przy pomocy punktów
 //    CGFloat yOffset = 400.0f;
+//    [self.view addSubview:[self createCircleToViewAtPoint:CGPointMake(0.0f, yOffset) withSize:CGSizeMake(10.0f, 10.0f)]];
+//    [self.view addSubview:[self createCircleToViewAtPoint:CGPointMake(self.view.bounds.size.width, yOffset - 100.0f) withSize:CGSizeMake(10.0f, 10.0f)]];
 //    [self.collision addBoundaryWithIdentifier:@"bariera"
 //                                    fromPoint:CGPointMake(0.0f, yOffset)
-//                                      toPoint:CGPointMake(self.view.bounds.size.width, yOffset)];
+//                                      toPoint:CGPointMake(self.view.bounds.size.width, yOffset - 100.0f)];
+    
+    
     // 6. Tryby pracy grawitacji
     // 6.1 Tryb zderzeń tylko dla widoków
 //    self.collision.collisionMode = UICollisionBehaviorModeItems;

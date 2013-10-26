@@ -29,17 +29,23 @@
     // 1. Stworzenie obiektu zachowania popychania z trybem natychmiastowego przśpieszenia
 //    self.push = [[UIPushBehavior alloc] initWithItems:@[self.rect] mode:UIPushBehaviorModeInstantaneous];
     
-    // 2. Stworzenie obiektu zachowania popychania z trybem natychmiastowego przśpieszenia
+    // 2. Stworzenie obiektu zachowania popychania z trybem ciągłego przśpieszenia
 //    self.push = [[UIPushBehavior alloc] initWithItems:@[self.rect] mode:UIPushBehaviorModeContinuous];
 
     // 3. Zdefiniowanie nowego wektora siły
-//    [self.push setPushDirection:CGVectorMake(0.0f, -2.0f)];
+//    [self.push setPushDirection:CGVectorMake(0.0f, -.5f)];
     
     // 4. Dodanie do animatora
 //    [self.animator addBehavior:self.push];
     
     // 5. Zmiana punktu przyłożenia siły
-//    [self.push setTargetOffsetFromCenter:UIOffsetMake(10.0f, 10.0f) forItem:self.rect];
+//    [self.push setTargetOffsetFromCenter:UIOffsetMake(10.0f, 10.0f)
+//                                 forItem:self.rect];
+    
+    // 6. Zwiększenie gęstości
+//    UIDynamicItemBehavior *densityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.rect]];
+//    densityBehavior.density = 12.0;
+//    [self.animator addBehavior:densityBehavior];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +56,7 @@
 
 - (void)prepareView
 {
+    self.navigationItem.rightBarButtonItem = nil;
     // Stworzenie animatora
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
@@ -58,18 +65,5 @@
     self.rect = [self createRectWithCenter:self.anchorPoint];
     [self.view addSubview:self.rect];
     
-}
-- (void)restoreState
-{
-    [self.push removeItem:self.rect];
-    [self.animator removeAllBehaviors];
-    [self.rect removeFromSuperview];
-    
-    self.rect = [self createRectWithCenter:self.anchorPoint];
-    [self.view addSubview:self.rect];
-    
-    self.push = [[UIPushBehavior alloc] initWithItems:@[self.rect] mode:UIPushBehaviorModeContinuous];
-    self.push.pushDirection = CGVectorMake(0.0f, -1.0f);
-    [self.animator addBehavior:self.push];
 }
 @end

@@ -30,7 +30,7 @@
     // 1. Tworzenie kwadratu i dodawanie go do tego widoku
     self.rect = [self createRect];
     [self.view addSubview:self.rect];
-    
+// ========================================================== //    
     // 2. Tworzenie obiektu animatora z widokiem odniesienia
     //    Każdy z kontrolerów ma zdefiniowaną własność animatora
 //    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
